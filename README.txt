@@ -8,7 +8,6 @@ But seems to work on my compy!
 Build system is for MSVC 2010 SP1, but it should compile on
 OSX/Linux with a custom g++ command line.
 
-
 anyway:
 - Usage example in python/pyaudiotest.py
 - Requires pyaudio. The author says that it's alpha-quality software,
@@ -17,6 +16,7 @@ anyway:
   system, but I'm too lazy right now.
   Instead remember that you can only have one (1) 6581. (for now)
 - by "frame" we mean one 16bit mono sample (2 bytes)
+
 
 API:
   resid.init(sid_clock_frequency, sample_rate, passband_freq)

@@ -13,7 +13,6 @@ def callback(in_data, frame_count, time_info, status):
 	data = bytes(eh[0])
 	return (data, pyaudio.paContinue)
 
-
 try:
 
 	resid.say_hello("MIXERI OF ORIGO")
