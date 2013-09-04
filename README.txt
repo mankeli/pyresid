@@ -12,6 +12,7 @@ anyway:
 - Usage example in python/pyaudiotest.py
 - Requires pyaudio. The author says that it's alpha-quality software,
   but it seems to work fine here. It might support ASIO, but dunno.
+  ( http://people.csail.mit.edu/hubert/pyaudio/ )
 - SID emu hides a global state. This should upgraded to use Python object
   system, but I'm too lazy right now.
   Instead remember that you can only have one (1) 6581. (for now)
