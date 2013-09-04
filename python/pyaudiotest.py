@@ -1,5 +1,3 @@
-"""PyAudio Example: Play a wave file (callback version)."""
-
 import pyaudio
 import time
 import sys
@@ -8,7 +6,11 @@ import sys
 sys.path.append('../Release')
 import resid
 
+from math import sin
+
 def callback(in_data, frame_count, time_info, status):
+	freq = (int(sin(time_info["output_buffer_dac_time"] * 15) * 125 + 128)) % 256
+	resid.wr(0x16, freq)
 	eh = resid.gen(0, frame_count)
 	data = bytes(eh[0])
 	return (data, pyaudio.paContinue)
@@ -27,11 +29,15 @@ try:
 	resid.run(5);
 	resid.wr(0x01, 0x04)
 	resid.run(5);
+	resid.wr(0x02, 0x00)
+	resid.run(5);
+	resid.wr(0x03, 0x08)
+	resid.run(5);
 	resid.wr(0x05, 0xFF)
 	resid.run(5);
 	resid.wr(0x06, 0x0F)
 	resid.run(5);
-	resid.wr(0x04, 0x21)
+	resid.wr(0x04, 0x41)
 	resid.run(5);
 
 	eh = resid.gen(0, 10)
