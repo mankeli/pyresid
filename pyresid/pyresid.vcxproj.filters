@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\resid">
+      <UniqueIdentifier>{57325b59-0ae3-4139-8202-2a0acda3d618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\resid\resamplers">
+      <UniqueIdentifier>{eb8dc78b-aa21-4059-b506-de7802ef3944}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pyresid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\Dac.cpp">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\EnvelopeGenerator.cpp">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\ExternalFilter.cpp">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\Filter.cpp">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\Filter6581.cpp">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\FilterModelConfig.cpp">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\OpAmp.cpp">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\SID.cpp">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\Spline.cpp">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\WaveformCalculator.cpp">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\WaveformGenerator.cpp">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\version.cc">
+      <Filter>Source Files\resid</Filter>
+    </ClCompile>
+    <ClCompile Include="residfp\resample\SincResampler.cpp">
+      <Filter>Source Files\resid\resamplers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
