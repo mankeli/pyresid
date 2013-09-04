@@ -47,3 +47,13 @@ API:
    resid.say_hello(name)
      This is used to send scene-style greetings.
 
+
+Usage tips:
+  Usage idea is that if you want to have a proper cycle-exact playroutine,
+  you should put the register writes to a buffer, and then run the emulation
+  for proper max_cycles and max_frames, while doing register writes in the
+  correct places. It's a bit complicated, but the only better way is probably
+  to emulate the 6510 and the real playrutine.
+
+  Of course, if you don't mind about cycle-exactness (ie. want to just create some
+  sounds) then just call run, wr and gen whenever you please :-)
